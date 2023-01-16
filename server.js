@@ -4,6 +4,7 @@ const WebSocket=require('ws');
 const app=express();
 app.use(express.json({ extended: false}));
 app.use(express.static('public'));
+console.log('Resign Resign Resign')
 
 var port = process.env.PORT || 3000;
 const server=new WebSocket.Server({ server:app.listen(port) });
